@@ -1,0 +1,173 @@
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    background-color: rgb(47, 219, 231);
+    background: linear-gradient(180deg, rgba(47, 219, 231, 1) 0%, rgb(23, 64, 247) 100%);
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+  
+  h1 {
+    border-top: dashed 4px white;
+    border-right: dashed 4px black;
+    border-left: dashed 4px black;
+    border-bottom: dashed 4px white;
+    text-align: center;
+    font-size: 64px;
+    margin: auto;
+  }
+  
+  h3 {
+    font-family: 'Ovo', serif;
+    border: none;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    padding-top: 7.5px;
+  }
+  
+  p, li  {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  nav {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    list-style-type: none;
+    padding: 0.5em;
+    margin: 0.5em;
+  }
+
+  .toggle {
+    text-align: right;
+  }
+
+  .item {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+
+  .item a:hover {
+    color: white;
+  }
+
+  .item a {
+    color: #f5ef42;
+    font-size: 36px;
+    text-decoration: none;
+  }
+
+  .show {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  article {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column; 
+  }
+  
+  #menu article {
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: flex-end;
+    flex-flow: column;
+  }
+  
+  .line {
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  
+  #menu {
+    background-color: rgb(47, 219, 231);
+    background: linear-gradient(180deg, rgba(47, 219, 231, 1) 0%, rgb(23, 64, 247) 100%);
+    text-align: center;
+    width: auto;
+    height: auto;
+  }
+
+  #menu table {
+    text-align: center;
+    margin-right: 1px;
+    margin-left: 1px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .wings {
+    color: black;
+    font-weight: bolder;
+    font-size: 32px;
+  }
+
+.wingtypes1 {
+    text-align: center;
+    font-size: 16px;
+    list-style: square;
+    color: black;
+}
+
+    .sandwich {
+      color: black;
+      font-weight: bolder;
+      font-size: 32px;
+    }
+    
+    .sandwichtypes {
+      text-align: center;
+      font-size: 16px;
+      list-style: square;
+      color: black;
+    }
+    
+    .burger{
+      color: black;
+      font-weight: bolder;
+      font-size: 32px;
+    }
+    
+    .burgertypes {
+      text-align: center;
+      font-size: 16px;
+      list-style: square;
+      color: black;
+    }
+
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
