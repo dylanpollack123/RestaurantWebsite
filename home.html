@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Final Project</title>
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- link to Font Awesome icon font -->
+    <script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ovo&display=swap" rel="stylesheet">
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles1.css">
+</head>
+<body>
+    <nav>
+        <ul>
+        <!-- Notice the use of the icon font - make sure you know how to install these -->
+          <li class="toggle"><i class="fas fa-bars fa-2x"></i></li>
+          <li class="item"><a href="home.html">Home</a></li>
+          <li class="item"><a href="food.html">Food</a></li>
+          <li class="item"><a href="drink.html">Drink</a></li>
+          <li class="item"><a href="entertainment.html">Entertainment</a></li>
+          <li class="item"><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+      
+    <main id="menu">
+            <div class="container">
+                <article>
+                    <h1> <span style="color:#f5ef42; font-size: 100px; font-weight: bolder; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" > POLLACK's</span>
+                        <span style="color:#f5ef42; font-size: 50px; font-family: 'Courier New', Courier, monospace; font-weight: normal;" > SPORTS BAR & GRILL</span></h1>
+                        <p><span style="font-size: 25px; font-style: italic; font-weight: lighter;">TV's, Pool Tables, Dart Boards, and Slot Machines</span></p>
+                        <div class="line1">
+                        <img src="images/wings.jpg" alt="wings" style="width:30em; height:30em;">
+                        <h3 class = "wings"> Wings </h3>
+                        <p class = "wingtypes1"> Fried, tossed, and delicious juicy wings made however you like! <br>
+                            We get our wings right from farm to table so you can have the cleanest and best tasting wings around. <br>
+                            Our chef's delicately fry and toss the wings to coat them in any of our 10 sauces. <br>
+                            Come on in and try them out!</p>
+                        </div>
+                        
+                    
+                        
+                        <div class="line2">
+                        <img src="images/sandwich.jpg" alt="sandwiches" style="width:30em; height:30em;">
+                        <h3 class = "sandwich"> Sandwiches </h3>
+                        <p class = "sandwichtypes">Sandwiches made from all different kinds of meat and cooked to perfection! <br> 
+                            From the bun to the indgredients to the type of meat, all of our sandwiches are rich in flavor. <br>
+                            Choose from any one of our 5 sandwiches to enjoy. <br>
+                            Come on in and try them out! </p>
+                        </div>
+                        
+                    
+                        
+                        <div class="line3">
+                        <img src="images/burger.jpg" alt="burgers" style="width:30em; height:30em;">
+                        <h3 class = "burger"> Burgers </h3>
+                        <p class = "burgertypes">Delicious patties straight from the farm to our restaurant! <br>
+                            Cooked either medium, medium well, or well done, you can not go wrong with any of our 5 burger choices. <br>
+                            The Southwest is a fan favorite. <br>
+                            But you can never go wrong with a big bacon. <br>
+                            Come on in and try them out! </p>
+                        </div>
+                           
+                </div>
+                </article>
+
+
+    </main>
+
+    <!-- Script for Navigation - hides and reveals menu items on click -->
+    <script>
+        function toggleDropdown() {
+            document.querySelectorAll('.item').forEach(item => item.classList.toggle('show'));
+        }
+        document.querySelector('.toggle').addEventListener('click', toggleDropdown);
+    </script>
+</body>
+</html>

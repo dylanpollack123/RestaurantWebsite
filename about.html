@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Final Project</title>
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- link to Font Awesome icon font -->
+    <script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ovo&display=swap" rel="stylesheet">
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles4.css">
+</head>
+<body>
+    <nav>
+        <ul>
+        <!-- Notice the use of the icon font - make sure you know how to install these -->
+          <li class="toggle"><i class="fas fa-bars fa-2x"></i></li>
+          <li class="item"><a href="home.html">Home</a></li>
+          <li class="item"><a href="food.html">Food</a></li>
+          <li class="item"><a href="drink.html">Drink</a></li>
+          <li class="item"><a href="entertainment.html">Entertainment</a></li>
+          <li class="item"><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+      
+            <main id="menu">
+                <article>
+                    <h5><span style="color:#f5ef42; font-size: 100px; font-weight: bolder; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" > POLLACK's</span>
+                        <span style="color:#f5ef42; font-size: 50px; font-family: 'Courier New', Courier, monospace; font-weight: normal;" > SPORTS BAR & GRILL</span></h5>
+                        <p> Pollack's Sports Bar & Grill is a unique sports bar located in Chicago, IL near the South Side. <br>
+                            Pollack's is a great environment with even better food. <br>
+                            We take good care of customers and really focus on the customer's wants and needs at all times. <br>
+                            Our menu consists of a variety of wings, sandwiches, burgers, and drinks. <br>
+                            On top of that, Pollack's has 20 flatscreen TV's, a pool table, and slot machines for entertainment. <br>
+                            Bring your friends and family and come on in and have yourself a day!
+                        </p>
+                    <div class="container1">
+                        <div class="days">
+                            <div class="word">
+                                <h1>Location</h1>
+                                <p class="reviews">Location<br>
+                                    <span style="font-style:italic"> 12345 Food St Chicago, IL<br></span>
+                                <p>This our one and only location as of now.</p>						
+                                <img src="images/googlemaps.jpg" alt="Location" style="width:15em; height:15em;">
+                            </div>
+                        </div>
+                        <div class="days">
+                            <div class="word">
+                                <h1>Hours</h1>
+                                <p class="reviews">Hours<br>
+                                    <span style="font-style:italic"> Mon-Thu: 1PM-12AM<br></span>
+                                    <span style="font-style:italic"> Fri-Sun: 1PM-1AM<br></span>
+                                <p>Our hours are as is and will only change depending on certain holidays.</p>
+                                <img src="images/hours.jpg" alt="Hours" style="width:15em; height:15em;">
+                            </div>
+                        </div>
+                        <div class="days">
+                            <div class="word">
+                                <h1>Contact</h1>
+                                <p class="reviews">Contact<br>
+                                    <span style="font-style:italic"> Phone: 123-456-7890 <br></span>
+                                    <span style="font-style:italic"> Email: dylanpollack123@yahoo.com <br></span>
+                                <p> Please feel free to contact us at any open hours time.</p>
+                                <img src="images/contact.jpg" alt="Contact" style="width:15em; height:15em;">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </main>
+            <script>
+                function toggleDropdown() {
+                    document.querySelectorAll('.item').forEach(item => item.classList.toggle('show'));
+                }
+                document.querySelector('.toggle').addEventListener('click', toggleDropdown);
+            </script>
+</body>
+</html>

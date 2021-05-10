@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Final Project</title>
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- link to Font Awesome icon font -->
+    <script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ovo&display=swap" rel="stylesheet">
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles3.css">
+</head>
+<body>
+    <nav>
+        <ul>
+        <!-- Notice the use of the icon font - make sure you know how to install these -->
+          <li class="toggle"><i class="fas fa-bars fa-2x"></i></li>
+          <li class="item"><a href="home.html">Home</a></li>
+          <li class="item"><a href="food.html">Food</a></li>
+          <li class="item"><a href="drink.html">Drink</a></li>
+          <li class="item"><a href="entertainment.html">Entertainment</a></li>
+          <li class="item"><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+      
+            <main id="menu">
+                <article>
+                    <h5><span style="color:#f5ef42; font-size: 100px; font-weight: bolder; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" > POLLACK's</span>
+                        <span style="color:#f5ef42; font-size: 50px; font-family: 'Courier New', Courier, monospace; font-weight: normal;" > SPORTS BAR & GRILL</span></h5>
+                    <div class="container1">
+                        <div class="days">
+                            <div class="word">
+                                <h1>Mondays</h1>
+                                <p class="night">Bingo Night<br>
+                                    <span style="font-style:italic"> 7PM-10PM<br></span>
+                                <p>Bring in your friends and family for a chance to win unique prizes. Prizes will change every week but will include gift cards, souveniers, and more! Bingo will start at 7PM sharp and wrap up at 10PM. Hope to see you there!</p>						
+                                <img src="images/bingo.jpg" alt="Bingo" style="width:15em; height:15em;">
+                            </div>
+                        </div>
+                        <div class="days">
+                            <div class="word">
+                                <h1>Tuesdays</h1>
+                                <p class="night">Burger Night<br>
+                                    <span style="font-style:italic"> 8PM-12AM<br></span>
+                                <p>Come on in for our juicy, delicous burgers for only $5! All burgers include fries OR tater tots and are cooked to your liking. Burgers will begin being served at 8PM sharp and wrap up at 12AM. Hope to see you there!</p>
+                                <img src="images/burger.jpg" alt="Burgers" style="width:15em; height:15em;">
+                            </div>
+                        </div>
+                        <div class="days">
+                            <div class="word">
+                                <h1>Wednesdays</h1>
+                                <p class="night">Wing Wednesdays<br>
+                                    <span style="font-style:italic"> 8PM-12AM<br></span>
+                                <p>Join us on Wednesdays for 50 cent wings. Any one of our 10 flavors will be available either traditional or boneless. Wings will begin being served at 8PM sharp and wrap up at 12AM. Hope to see you there!</p>
+                                <img src="images/wings.jpg" alt="Wings" style="width:15em; height:15em;">
+                            </div>
+                        </div>
+                        <div class="days">
+                            <div class="word">
+                                <h1>Thursdays</h1>
+                                <p class="night">Karaoke Night<br>
+                                    <span style="font-style:italic"> 9PM-1AM<br></span>
+                                <p>Thursdays are for having fun and singing your lungs out. Our DJ will play any song of your choice that is available on Apple music. Bring your friends and reserve your time slot to sing starting at 9PM and ending at 1AM. Hope to see you there!</p>
+                                <img src="images/karaoke.jpg" alt="Karaoke" style="width:15em; height:15em;">
+                            </div>
+                        </div>
+                        <div class="days">
+                            <div class="word">
+                                <h1>Weekends</h1>
+                                <p class="night">Live Music<br>
+                                                   <span style="font-style:italic"> All Night<br></span>
+                                <p>Friday through Sunday is for some good ole live music. With a variety of genres and new bands each weekend, come in and enjoy the sounds of good music while surrounded by good people. Live music will be from open to close. Hope to see you there!</p>						
+                                <img src="images/livemusic.jpg" alt="Live Music" style="width:15em; height:15em;">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </main>
+            <script>
+                function toggleDropdown() {
+                    document.querySelectorAll('.item').forEach(item => item.classList.toggle('show'));
+                }
+                document.querySelector('.toggle').addEventListener('click', toggleDropdown);
+            </script>
+</body>
+</html>
